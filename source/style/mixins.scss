@@ -1,0 +1,74 @@
+// Переменные цвета
+$c__gr:#57D9A6;
+$c__bl:#1C1C33;
+$c__bg:#23233B;
+$c__wh:#F6F6F8;
+$c__gray:#B2B2BF;
+$c__semi-gray:#4E4E65;
+$c__hover:#3ba57b;
+$c__pink:#FC5468;
+$c__active: #2c8a64;
+$c__max-wh: #FFFFFF;
+$c__bg-wh: #F5F5F5;
+
+
+// Переменные семьи шрифта
+$ssp:"Source Sans Pro Regular";
+$ssp__b:"Source Sans Pro Bold";
+$ssp-i:"Source Sans Pro Italic Regular";
+$ssp__b-i:"Source Sans Pro Italic Bold";
+
+// Примеси шрифта для адаптива
+@mixin fonts ($ff, $fsz, $lh, $ls) {
+    font-family: $ff;
+    font-size: $fsz;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+// Шаблоны анимации ссылок
+%a__hover {
+    &:hover {
+        color: $c__hover;
+        transition: 0.4s;
+    }
+}
+%a__active {
+    &:active {
+        color: $c__active;
+    }
+}
+// Шаблоны кнопки стиля, анимации
+%button__style {
+    padding: 16px 24px 16px 24px;
+    background-color: $c__gr;
+    border-radius: 4px;
+    @include fonts ($ssp, 18px, 27px, 1px);
+    text-align: center;
+    text-transform: uppercase;
+    max-width: min-content;
+    white-space: nowrap;
+}
+%button__hover {
+    &:hover {
+        background-color: $c__hover;
+        transition: 0.4s;
+        color: $c__wh;
+    }
+}
+%button__active {
+    &:active {
+        background-color: $c__active;
+    }
+}
+
+// Анимация блоков
+%block__hover {
+    &:hover {
+        box-shadow: 0 14px 28px $c__gr, 0 10px 10px rgba(35, 236, 62, 0.22);
+        background-color: $c__wh;
+        transition: 0.3s;
+    }
+    &:active {
+        background-color: $c__gray;
+    }
+}

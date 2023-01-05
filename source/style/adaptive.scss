@@ -1,0 +1,347 @@
+@import "mixins.scss";
+@media (max-width:1170px) {
+    .recommendations__image {
+        height: 500px;
+    }
+    .recommendations__image img {
+        object-fit: cover;
+        height: 100%;
+        object-position: left;
+    }
+    header .wrapper nav {
+        width: 53%;
+    }
+    header .wrapper .header__basket::after {
+        left: 23%;
+    }
+}
+@media (max-width:1024px) {
+    header .wrapper .header__logo {
+        margin-left: 3%;
+    }
+    .platform .wrapper .platform-block {
+        margin-left: 3%;
+    }
+    footer .wrapper .footer__logo {
+        padding-left: 0;
+        margin-left: 3%;
+    }
+    footer .wrapper .footer__info {
+        padding-left: 0;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .copyright .wrapper .copyright__info .copyright__info-author {
+        padding-left: 0;
+        margin-left: 3%;
+    }
+    .recommendations__image img {
+        display: none;
+    }
+    .recommendations__image {
+        display: none;
+    }
+    .recommendations .wrapper .recommendations__info {
+        height: 500px;
+        margin: 0 auto;
+    }
+    .page-title {
+        text-align: center;
+    }
+    .page-subtitle {
+        text-align: center;
+    }
+    .recommendations__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .teaching .wrapper .teaching__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:767px) {
+    .header-banner {
+        height: 24px;
+    }
+    .header-banner .wrapper .header-banner__text {
+        @include fonts ($ssp, 12px, 23px, 0);
+    }
+    header {
+        height: 49px;
+    }
+    header .wrapper nav {
+        display: none;
+    }
+    header .wrapper .header__menu {
+        width: auto;
+    }
+    header .wrapper .header__menu .header__basket {
+        margin-right: 20px;
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .platform .wrapper .platform-block {
+        padding-top: 100px;
+    }
+    .platform .wrapper .platform-block .platform__title {
+        @include fonts ($ssp, 13px, 17px, 1px);
+    }
+    .separator {
+        width: 120px;
+    }
+    .platform .wrapper .platform-block .platform__info-title {
+        @include fonts ($ssp__b, 45px, 49px, 0);
+        margin: 52px 0 15px 0;
+    }
+    .platform .wrapper .platform-block .platform__info-subtitle {
+        @include fonts ($ssp, 17px, 25px, 0);
+        margin: 0px 0px 16px 0px;
+    }
+    .platform .wrapper .platform-block .platform__info-autograph {
+        @include fonts ($ssp, 13px, 22px, 0);
+        margin-bottom: 32px;
+    }
+    .platform .wrapper .platform__image {
+        margin-top: 100px;
+        width: 70%;
+    }
+    .platform .wrapper .platform__image img {
+        max-width: 100%;
+        object-fit: cover;
+        height: 100%;
+        object-position: left;
+    }
+    .regular-button {
+        padding: 11px 19px 11px 19px;
+        border-radius: 2px;
+        @include fonts ($ssp, 13px, 23px, 1px)
+    }
+    .featured {
+        padding-top: 150px;
+        padding-bottom: 103px;
+    }
+    .page-title {
+        @include fonts ($ssp__b, 38px, 46px, 0);
+    }
+    .page-subtitle {
+        @include fonts ($ssp, 16px, 27px, 0);
+        margin-bottom: 35px;
+        margin-top: 35px;
+    }
+    .featured .wrapper .featured__price .price__block .price__block-title {
+        @include fonts ($ssp, 19px, 24px, 0);
+        margin: 19px 24px 8px 19px;
+    }
+    .featured .wrapper .featured__price .price__block .price__block-autograth {
+        margin: 0 19px 10px 19px;
+        @include fonts ($ssp, 12px, 22px, 0);
+    }
+    .featured .wrapper .featured__price .price__block .price__block-price {
+        margin-left: 19px;
+        margin-right: 19px;
+        @include fonts ($ssp, 17px, 22px, 0);
+    }
+    .featured .wrapper .featured__price .price__block .price__block-link {
+        margin: 11px 19px 0 19px;
+        @include fonts ($ssp, 11px, 16px, 1px);
+        padding-bottom: 10px;
+    }
+    .recommendations .wrapper .recommendations__info {
+        height: 450px;
+    }
+    .workshops {
+        padding: 100px 0 100px 0;
+    }
+    .workshops .wrapper .workshops__about {
+        margin-top: 50px;
+    }
+    .workshops .wrapper .workshops__about .about__block .about__block-title {
+        margin: 17px 19px 7px 19px;
+        @include fonts ($ssp__b, 19px, 15px, 0);
+    }
+    .workshops .wrapper .workshops__about .about__block .about__block-subtitle {
+        @include fonts ($ssp, 13px, 22px, 0);
+        margin: 0 19px 23px 19px;
+    }
+    .workshops .wrapper .workshops__about .about__block .about__block-link {
+        @include fonts ($ssp, 12px, 19px, 1px);
+            color: $c__gr;
+            margin-left: 19px;
+            padding-bottom: 17px;
+    }
+    .reviews {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .reviews .wrapper .reviews__block .reviews__comment {
+        @include fonts ($ssp-i, 22px, 35px, 0);
+        margin: 35px 0 27px 0;
+    }
+    .reviews .wrapper .reviews__block .reviews__name {
+        @include fonts ($ssp, 13px, 22px, 0);
+        margin-bottom: 30px;
+    }
+    .teaching {
+        padding: 70px 0 60px 0;
+    }
+    .teaching .wrapper .teaching__block {
+        margin-left: 0;
+    }
+    .articles {
+        padding: 100px 0 300px 0;
+    }
+    .articles .wrapper .articles__news .news__block .news__block-date {
+        margin: 19px 19px 17px 19px;
+        @include fonts ($ssp, 12px, 23px, 0);   
+    }
+    .articles .wrapper .articles__news .news__block .news__block-title {
+        @include fonts ($ssp, 19px, 24px, 0);
+        margin: 0 19px 5px 19px;
+    }
+    .articles .wrapper .articles__news .news__block .news__block-autograth {
+        @include fonts ($ssp, 12px, 23px, 0);
+        margin-left: 19px;
+        padding-bottom: 10px;
+    }
+    footer {
+        padding: 260px 0 90px 0;
+    }
+    footer .wrapper .footer__form {
+        bottom: 120%;
+        height: 310px;
+    }
+    footer .wrapper .footer__form .footer__form-title {
+        @include fonts ($ssp__b, 38px, 46px, 0);
+    }
+    footer .wrapper .footer__form form #footer__email {
+        width: 320px;
+        @include fonts ($ssp__b, 15px, 45px, 0);
+        height: 60px;
+    }
+    footer .wrapper .footer__form form #footer__button {
+        padding: 5px 22px 5px 22px;
+        @include fonts ($ssp__b, 15px, 47px, 0);
+    }
+    footer .wrapper .footer__info .footer__links p {
+        margin-bottom: 16px;
+        @include fonts ($ssp, 13px, 15px, 1px);
+    }
+    footer .wrapper .footer__info .footer__links li {
+        margin-top: 12px;
+        @include fonts ($ssp, 13px, 22px, 0);
+    }
+    footer .wrapper .footer__info .footer__socialmedia p {
+        margin-bottom: 18px;
+        @include fonts ($ssp__b, 14px, 17px, 1px);
+    }
+    footer .wrapper .footer__info .footer__socialmedia .footer__socialmedia-links li {
+        width: 36px;
+        height: 36px;
+    }
+    footer .wrapper .footer__info .footer__socialmedia .footer__socialmedia-links li:not(:last-child) {
+        margin-right: 10px;
+    }
+    .copyright {
+        height: 40px;
+    }
+    .copyright .wrapper .copyright__info {
+        @include fonts ($ssp, 12px, 19px, 0);
+    }
+    .copyright .wrapper .copyright__info .copyright__info-author {
+        margin-right: 26px;
+    }
+}
+@media (max-width:577px) {
+    .platform .wrapper .platform__image {
+        display: none;
+    }
+    .platform .wrapper .platform-block .platform__info-title {
+        margin: 15px 0 30px 0;
+    }
+    .platform .wrapper .platform-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .featured {
+        padding: 210px 0 0 0;
+    }
+    .featured .wrapper .featured__price {
+        flex-wrap: wrap;
+    }
+    .featured .wrapper .featured__price .price__block {
+    }
+    .featured .wrapper .featured__price .price__block:first-child {
+        margin: 0;
+    }
+    .featured .wrapper .featured__price .price__block:nth-child(2) {
+        margin: 20px 0 0 0;
+    }
+    .featured .wrapper .featured__price .price__block:last-child {
+        margin: 20px 0 0 0;
+    }
+    .workshops .wrapper .workshops__about {
+        flex-wrap: wrap;
+    }
+    .workshops .wrapper .workshops__about .about__block:first-child {
+        margin: 0;
+    }
+    .workshops .wrapper .workshops__about .about__block:nth-child(2) {
+        margin: 20px 0 0 0;
+    }
+    .workshops .wrapper .workshops__about .about__block:last-child {
+        margin: 20px 0 0 0;
+    }
+    .teaching .wrapper {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .teaching .wrapper .teaching__image {
+        margin: 30px 0 0 0;
+    }
+    .articles .wrapper .articles__news {
+        flex-wrap: wrap;
+    }
+    .articles .wrapper .articles__news .news__block:first-child {
+        margin: 0;
+    }
+    .articles .wrapper .articles__news .news__block:nth-child(2) {
+        margin: 20px 0 0 0;
+    }
+    .articles .wrapper .articles__news .news__block:last-child {
+        margin: 20px 0 0 0;
+    }
+    footer .wrapper .footer__info .footer__socialmedia {
+        width: 84px;
+    }
+    footer .wrapper .footer__form form #footer__email {
+        margin-bottom: 15px;
+        margin-left: 15px;
+        @include fonts ($ssp__b, 13px, 35px, 0);
+        height: 40px;
+        width: 200px;
+    }
+    footer .wrapper .footer__form .footer__form-title {
+        @include fonts ($ssp__b, 26px, 36px, 0);
+    }
+    footer .wrapper .footer__form form #footer__button {
+    padding: 0px 16px 0px 16px;
+    font-family: "Source Sans Pro Bold";
+    font-size: 15px;
+    line-height: 42px;
+    margin-left: 15px;
+    }
+    .header-banner {
+        height: 26px;
+    }
+    .header-banner .wrapper .header-banner__text {
+        @include fonts ($ssp, 13px, 12px, 0);
+    }
+}
